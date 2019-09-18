@@ -21,7 +21,7 @@ class App extends Component {
       case "=":
         this.setState({
           total: eval(total),
-          doubleDisplay: eval(total) + "",
+          doubleDisplay: String(eval(total)),
           equal: !equal
         });
         break;
