@@ -82,29 +82,3 @@ class App extends Component {
 }
 
 export default App;
-
-// handleInput(event) {
-//   // console.log(this.state.inputString)
-//   // if (!regex.test(this.state.inputString)) { //If our 'patterns we don't want ' regex doesn't match anything
-//     if (
-//       operatorRegex.test(event.target.value) && //If event value passed in is an operator
-//       operatorLast.test(this.state.inputString) //If the last value of our inputString is an operator
-//     ) {
-//       this.setState({
-//         inputString: this.state.inputString.replace(
-//           //replace the old operator with thte new one that was clicked
-//           operatorLast,
-//           event.target.value
-//         )
-//       });
-//     } else {
-//       this.setState({
-//         inputString: this.state.inputString + event.target.value
-//       });
-//     }
-//   // }
-// }
-
-// var operatorRegex = /[*\/\-\+]/;
-// // tests whether a operator is the last character in inputString
-// var operatorLast = /[*\/\-\+]$/;
