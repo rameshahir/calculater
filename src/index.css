@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+addDisplay = number => {
+    switch (number) {
+      case "=":
+        this.setState({
+          total: eval(this.state.total + number),
+          doubleDisplay: ""
+        })
+        break;
+      case "C":
+        this.setState({
+          total: "",
+          doubleDisplay: ""
+        })
+        break;
+      case "X":
+        this.setState({
+          total: eval(this.state.total + number),
+          doubleDisplay: this.state.doubleDisplay.substring(0,this.state.doubleDisplay.length - 1)
+        })
+        break;
+      default:
+        this.setState({
+          total: this.state.total + number,
+          doubleDisplay: this.state.doubleDisplay + number
+        });
+        
+
+    }
+
+  };
