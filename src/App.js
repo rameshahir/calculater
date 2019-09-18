@@ -19,6 +19,7 @@ class App extends Component {
 
     switch (number) {
       case "=":
+        console.log(doubleDisplay)
         this.setState({
           total: eval(total),
           doubleDisplay: String(eval(total)),
